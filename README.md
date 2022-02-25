@@ -2,14 +2,14 @@
 
 n,m,k = map(int, input().split())
 
-#ans will be the string we will submit 
+"""ans will be the string we will submit """
 ans=''
 """because we have two possible choices for the pitches
 in the sample, a good sample will either be of length 1 ore 2"""
 
-#there are always n 1-length good samples, just the elements
-#there are at n-1 consecutive pairs in the string, there are at most n-1 2-length good samples
-#if there are less than n or more than 2n-1 pairs, we have a contradiction
+"""there are always n 1-length good samples, just the elements
+    there are at n-1 consecutive pairs in the string, there are at most n-1 2-length good samples
+    if there are less than n or more than 2n-1 pairs, we have a contradiction"""
 if k<n or k>2*n-1:
     ans='-1'
 else:
